@@ -1,0 +1,31 @@
+-- 1. Creación del esquema de la tabla
+CREATE TABLE ventas (
+    id INT PRIMARY KEY,
+    producto VARCHAR(50),
+    categoria VARCHAR(50),
+    precio DECIMAL(10, 2),
+    fecha DATE
+);
+
+-- 2. Inserción de 20 filas de datos de ejemplo
+INSERT INTO ventas (id, producto, categoria, precio, fecha) VALUES
+(1, 'Laptop Pro', 'Electrónica', 1200.00, '2026-01-10'),
+(2, 'Ratón Inalámbrico', 'Electrónica', 25.50, '2026-01-12'),
+(3, 'Teclado Mecánico', 'Electrónica', 85.00, '2026-01-15'),
+(4, 'Monitor 4K', 'Electrónica', 350.00, '2026-01-18'),
+(5, 'Auriculares Bluetooth', 'Electrónica', 79.99, '2026-01-20'),
+(6, 'Silla Ergonómica', 'Muebles', 180.00, '2026-01-22'),
+(7, 'Escritorio Elevable', 'Muebles', 299.99, '2026-01-25'),
+(8, 'Lámpara de Escritorio', 'Muebles', 45.00, '2026-01-28'),
+(9, 'Estantería de Libros', 'Muebles', 120.00, '2026-02-02'),
+(10, 'Zapatillas Running', 'Ropa', 95.00, '2026-02-05'),
+(11, 'Sudadera con Capucha', 'Ropa', 45.50, '2026-02-08'),
+(12, 'Pantalón Vaquero', 'Ropa', 60.00, '2026-02-12'),
+(13, 'Camiseta de Algodón', 'Ropa', 19.99, '2026-02-15'),
+(14, 'Cafetera Expreso', 'Hogar', 150.00, '2026-02-18'),
+(15, 'Batidora de Vaso', 'Hogar', 65.00, '2026-02-20'),
+(16, 'Aspiradora Robot', 'Hogar', 249.99, '2026-02-25'),
+(17, 'Set de Sartenes', 'Hogar', 89.00, '2026-03-01'),
+(18, 'Smartwatch', 'Electrónica', 199.99, '2026-03-03'),
+(19, 'Mochila Impermeable', 'Ropa', 39.99, '2026-03-05'),
+(20, 'Espejo de Pared', 'Muebles', 75.00, '2026-03-08');

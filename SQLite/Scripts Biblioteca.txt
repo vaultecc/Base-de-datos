@@ -1,0 +1,27 @@
+.open Biblioteca2.db
+
+.database
+
+CREATE Table libros(
+id INTEGER PRIMARY KEY,
+Título TEXT NOT NULL,
+Autor TEXT NOT NULL,
+Editorial TEXT NOT NULL,
+Genero TEXT,
+Páginas REAL
+);
+
+.tables
+
+.schema Biblioteca
+
+INSERT INTO Biblioteca (Título, Autor, Editorial, Genero, Páginas)
+VALUES
+ ('Aleación de ley', 'Brandon Sanderson', 'Nova', 'Fantasía', 352),
+ ('El Hobbit', 'J.R.R. Tolkien', 'Minotauro', 'Fantasía', 310);
+
+SELECT * FROM Biblioteca;
+
+SELECT Título
+FROM Biblioteca
+WHERE Páginas <400;

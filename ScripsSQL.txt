@@ -1,0 +1,17 @@
+- CREATE SCHEMA (Nombre); = Esto crea el schema
+
+- CREATE TABLE (Nombre) ( = Esto es para crear una tabla (Debes añadir el contenido de la tabla para poder crearla)
+
+- USE (NOMBRE_SCHEMA); = le dice al programa que schema quieres usar
+
+- ALTER TABLE (Nombre); = Le dice que tabla quieres cambiar
+- MODIFY (Nombre columna); = le indica que quieres modificar, en este caso una columna EJ. MODIFY PrecioEntrada DECIMAL (6,2) NOT NULL;
+-ADD = si quieres añadir y no modificar
+-DROP COLUMN (nombre columna) = Elimina esa columna de la tabla seleccionada
+
+-INSERT INTO eventos (idEventos, Nombre, Aforo, PrecioENtrada, Fecha, Lugar)
+Values (2, "Festival torremolinos", 4000, 2.9, "2026-11-22", "Palacio de ferias"); = Esto para rellenar los campos de las tablas
+
+-UPDATE Libros
+SET Precio = 15.50
+WHERE Id_Libro = 1;
